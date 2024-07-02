@@ -21,8 +21,8 @@ services:
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
-    depends_on:
-      - nginx-proxy-manager-db
+    # depends_on:
+    #   - nginx-proxy-manager-db
 
   # nginx-proxy-manager-db:
   #   container_name: nginx-proxy-manager-db
